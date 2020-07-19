@@ -1,0 +1,21 @@
+{
+  "name": "logarithmic-type-scale",
+  "version": "1.0.0",
+  "description": "An easy, responsive, universal typographic scale for the web powered by CSS variables.",
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "css-in-js",
+    "typography",
+    "type scale",
+    "font size",
+    "font sizing"
+  ],
+  "author": "Drew Powers",
+  "repository": "drwpow/logarithmic-type-scale",
+  "license": "MIT"
+}
