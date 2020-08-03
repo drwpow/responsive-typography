@@ -7,7 +7,7 @@ An easy, responsive, universal typographic scale for the web powered by CSS vari
 Install it using npm:
 
 ```
-npm install logarithmic-type-scale
+npm install responsive-typography
 ```
 
 There are 3 different ways to consume this. Use what’s right for you!
