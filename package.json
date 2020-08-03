@@ -1,6 +1,6 @@
 {
   "name": "responsive-typography",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An easy, responsive, universal typographic scale for the web powered by CSS variables.",
   "main": "index.cjs",
   "module": "index.mjs",
