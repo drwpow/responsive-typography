@@ -1,4 +1,7 @@
-export const defaultScale = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Scale = exports.defaultScale = void 0;
+exports.defaultScale = {
     // primary type scale
     u18: "11.390625em",
     u17: "9.950627481136905em",
@@ -74,9 +77,7 @@ export const defaultScale = {
     d17r: "0.10049617492923625rem",
     d18r: "0.0877914951989026rem",
 };
-export class Scale {
-    factor;
-    delta;
+class Scale {
     constructor({ factor, delta }) {
         if (!factor || !delta)
             throw new Error("missing constructor parameters. e.g.: `new Scale({ factor: 2.25, delta: 6 })`");
@@ -96,3 +97,4 @@ export class Scale {
         return `${val}${unit}`;
     }
 }
+exports.Scale = Scale;

@@ -1,5 +1,5 @@
 {
-  "name": "logarithmic-type-scale",
+  "name": "responsive-typography",
   "version": "1.0.1",
   "description": "An easy, responsive, universal typographic scale for the web powered by CSS variables.",
   "main": "index.cjs",
@@ -16,6 +16,14 @@
     "font sizing"
   ],
   "author": "Drew Powers",
-  "repository": "drwpow/logarithmic-type-scale",
-  "license": "MIT"
+  "repository": "drwpow/responsive-typography",
+  "scripts": {
+    "build:cjs": "npx typescript --project tsconfig-cjs.json && mv index.js index.cjs",
+    "build:mjs": "npx typescript --project tsconfig-mjs.json && mv index.js index.mjs",
+    "build": "npm run build:mjs && npm run build:cjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
 }
