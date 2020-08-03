@@ -81,7 +81,9 @@ const MyComponent = () => (
 
 You can use either one of the methods above, or all three! They all can work in tandem; use whatever method is most convenient for your needs.
 
-## Advanced: generate your own
+## Advanced: generate your own scale
+
+The default scale is a `2.25:6` typographic scale, meaning the font sizes increases by a `factor` of `2.25` every `6` steps. You can generate your own typographic scale using the `Scale` class:
 
 ```js
 import { Scale } from "responsive-typography";
@@ -95,3 +97,5 @@ console.log(scale(-2));
 console.log(scale(4, { root: true }));
 // -> "1.7411011266rem"
 ```
+
+Need help? Try our [online calculator](https://codepen.io/dangodev/full/ZEzmJaB).
