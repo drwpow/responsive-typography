@@ -10,17 +10,17 @@ Install it using npm:
 npm install responsive-typography
 ```
 
-There are 3 different ways to consume this. Use what’s right for you!
+You can consume responsive-typography either using CSS and/or JS. Use either, or both! They work together nicely.
 
-### Option 1: CSS Classes
+### CSS
 
-If you’d like to use the CSS utility classes, import `utilities.css`:
+If you’d like to use the CSS utility classes, import `/default-scale.css`:
 
 ```js
-import "responsive-typography/utilities.css";
+import "responsive-typography/default-scale.css";
 ```
 
-Then use the CSS classes anywhere in your markup:
+You can then use `.font-u#` and `.font-d#` utility classes anywhere in your markup:
 
 ```html
 <h1 class="font-u4">Increase Font Size +4</h1>
@@ -35,17 +35,7 @@ Then use the CSS classes anywhere in your markup:
 </div>
 ```
 
-Add either a `font-u*` class to increase the font by `*` steps, or `font-d*` to decrease the font by `*` steps.
-
-### Option 2: CSS Variables
-
-If you’d like instead to use this with CSS variables, import `variables.css`:
-
-```js
-import "responsive-typography/variables.css";
-```
-
-This will load global CSS variables into your project. Then use the global variables in your CSS:
+You can also load `--font-u#` and `--font-d#` global CSS variables anywhere in your CSS or your CSS-in-JS:
 
 ```css
 .my-heading-class {
@@ -63,7 +53,7 @@ This will load global CSS variables into your project. Then use the global varia
 
 This will work in any CSS, Sass, or CSS-in-JS file provided that stylesheet is loaded.
 
-### Option 3: JS
+### JS
 
 You can also load the values yourself if using a CSS-in-JS solution:
 
